@@ -114,13 +114,6 @@ promptUser = () => {
                     message: "What is the employees role?",
                     name: "employeeRole",
                     choices: roleArr
-                    // () => {
-                    // let roleArr = [];
-                    // for (let i = 0; i < res.length; i++) {
-                    //   roleArr.push(res[i].name);
-                    // }
-                    // return roleArr;
-                    // }
                   },
                   {
                     type: "list",
