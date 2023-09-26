@@ -8,7 +8,7 @@ promptUser = () => {
     {
       type: "list",
       message: "What would you like to do?",
-      choices: ["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add a Role", "View All Departments", "Add Department"],
+      choices: ["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add a Role", "View All Departments", "Add Department", "Exit"],
       name: "menuChoice"
     }
   ])
@@ -77,9 +77,7 @@ promptUser = () => {
               if (err) {
                 throw err;
               } else {
-                
                 const manArr = eres.map(manager => manager.first_name);
-
                 inquirer.prompt([
                   {
                     message: "What is the employees first name?",
@@ -268,6 +266,10 @@ promptUser = () => {
             })
           }
         })
+      }
+      else if (menuChoice === "Exit") {
+        console.log("Bye!")
+        process.exit(0);
       }
     })
     }
