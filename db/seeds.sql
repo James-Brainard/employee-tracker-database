@@ -14,11 +14,11 @@ VALUES
       ("Account Manager", 75000, 1),
       ("Accountant", 85000, 3),
       ("Legal Team Lead", 105000, 4),
-      ("Lawyer", 80000, 4);
+      ("Lawyer", 120000, 4);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-      ("James", "Brainard", 7, NULL),
+      ("James", "Brainard", 8, NULL),
       ("Josh", "Triggs", 4, NULL),
       ("Michael", "Villa", 5, NULL),
       ("Joshua", "Morrison", 6, NULL),
